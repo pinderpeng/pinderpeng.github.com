@@ -1,12 +1,9 @@
-#一点点说明
+Pinder's Page
+=====
 
-这是[BeiYuu.com](http://beiyuu.com)的源码，如果你看了[使用Github Pages建独立博客](http://beiyuu.com/github-pages/)，希望看下去哦：
+###博客模板
+博客模板由BeiYuu(http://beiyiuu.com)贡献。<br />
+如果你想fork我的博客，没有任何问题，但请标明出处。<br/>
 
-* 马上动手，很赞
-* 感谢认可
-* 推荐阅读：[我为什么写博客？](http://beiyuu.com/why-blog/)
-* 想复用我的设计，没问题，标个出处就好啦
-* 转载也没问题，标个出处呗少年
-* 恩，认真的童鞋最可爱啦~
-
-###请删掉统计代码哦 /_layouts/default.html L38-41
+###怎样建立一个这样的博客
+你可参考：[使用Github Pages建独立博客](http://beiyuu.com/github-pages/)
