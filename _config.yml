@@ -1,11 +1,28 @@
-auto: true
-
-markdown: rdiscount
-pygments: true
-paginate: 8
-permalink: /:title
-
+# Site settings
 title: Pinder's Page
-url: http://pinderpeng.org
-feed: /atom.xml
-author_info: <a href="http://pinderpeng.org/">Pinder</a>
+name: Pinder's Page
+email: pinderpeng@gmail.com
+description: '独立之精神，自由之思想'
+keywords: 'Pinder,pinder,page,blog,互联网,IT,游戏'
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://pinderpeng.org" # the base hostname & protocol for your site
+github: pinderpeng
+twitter: dozer47528
+
+author:
+  name: Dozer
+  email: mail@dozer.cc
+  github: dozer47528
+  twitter: dozer47528
+  bio: 'Dozer&#039;s Technology Blog'
+  email_md5: 3cccd2b313d9e9e1019f7a6784a6a084
+
+
+# Build settings
+paginate: 10
+paginate_path: "page/:num/"
+highlighter: pygments
+markdown: kramdown
+rss_path: feed
+categories_path: categories.html
+tags_path: tags.html
