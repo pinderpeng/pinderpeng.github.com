@@ -1,12 +1,12 @@
 # Site settings
-title: Pinder's Page
-name: Pinder's Page
-email: pinderpeng@gmail.com
-description: '独立之精神，自由之思想'
-keywords: 'Pinder,pinder,page,blog,互联网,IT,游戏'
+title: Dozer Zone
+name: Dozer Zone
+email: mail@dozer.cc
+description: 'Dozer&#039;s Technology Blog'
+keywords: 'Dozer,dozer,blog,java,互联网,翔工作室,大众点评'
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://pinderpeng.org" # the base hostname & protocol for your site
-github: pinderpeng
+url: "http://www.dozer.cc" # the base hostname & protocol for your site
+github: dozer47528
 twitter: dozer47528
 
 author:

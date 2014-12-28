@@ -1,12 +1,12 @@
 ---
-title:  梦入成都
+title: 梦入成都
 author: Pinder
 layout: post
 permalink: /2009/04/dreaming-in-chengdu/
 categories:
-	- 游记
+  - 游记
 tags:
-	- 游记
+  - 游记
 ---
 
 ## 题记（补） ##
