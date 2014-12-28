@@ -1,8 +1,12 @@
 ---
-layout: post
 title:  梦入成都
-category: blog
-description: 此篇旅行日志为在成都某网吧记录，同行的两家伙在现场魔兽，打怪的打怪，打野的打野，只剩下我苦逼无聊写写我们的天府之旅。时间有限，网吧里面诌出来其中两天的瘦瘦的记录。
+author: Pinder
+layout: post
+permalink: /2009/04/dreaming-in-chengdu/
+categories:
+	- 游记
+tags:
+	- 游记
 ---
 
 ## 题记（补） ##

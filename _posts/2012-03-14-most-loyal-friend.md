@@ -1,8 +1,12 @@
 ---
+title: 最忠实的朋友
+author: Pinder
 layout: post
-title:  最忠实的朋友
-category: blog
-description: 谁是我们共同的最忠实的朋友呢？
+permalink: /2012/03/most-loyal-friend/
+categories:
+	- 生活
+tags:
+	- 生活
 ---
 
 谁是我们共同的最忠实的朋友呢？
