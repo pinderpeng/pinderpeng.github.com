@@ -1,64 +1,53 @@
 ---
+title: Pinder's Homepage
 layout: page
-tagline:
 ---
 
+<ul class="listing">
 {% for post in paginator.posts %}
-
-<article class="home">
-
-  <span class="post-date">
-    {% assign d = post.date | date: "%d" | plus:'0' %}
-    {{ post.date | date: "%B" }}
-    {% case d %}
-    {% when 1 or 21 or 31 %}{{ d }}st,
-    {% when 2 or 22 %}{{ d }}nd,
-    {% when 3 or 23 %}{{ d }}rd,
-    {% else %}{{ d }}th,
-    {% endcase %}
-    {{ post.date | date: "%Y" }}
-  </span>
-
-  <h2>
-    <a href="{{ site.BASE_PATH }}{{ post.url }}">{{ post.title }}</a>
-  </h2>
-
-  <div>
-    {{ post.content | split:"<!--more-->" | first }}
-  </div>
-
-</article>
+  {% capture y %}{{post.date | date:"%Y"}}{% endcapture %}
+  {% if year != y %}
+    {% assign year = y %}
+    <li class="listing-seperator">{{ y }}</li>
+  {% endif %}
+  <li class="listing-item">
+    <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
+    <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+  </li>
 {% endfor %}
-<hr/>
+</ul>
 
-<ul class="pager">
+<div id="post-pagination" class="paginator">
 
   {% if paginator.previous_page %}
-  <li class="previous">
     {% if paginator.previous_page == 1 %}
-    <a href="{{ site.BASE_PATH }}/">&larr; Newer</a>
+    <a href="/"><前页</a>
     {% else %}
-    <a href="{{ site.BASE_PATH }}/{{ site.paginate_path | replace: ':num', paginator.previous_page }}">&larr; Newer</a>
+    <a href="/page{{paginator.previous_page}}"><前页</a>
     {% endif %}
-  </li>
   {% else %}
-  <li class="previous disabled">
-    <a>&larr; Newer</a>
-  </li>
+    <span class="previous disabled"><前页</span>
   {% endif %}
 
-  <li>
-    <span class="page_number">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
-  </li>
+      {% if paginator.page == 1 %}
+      <span class="current-page">1</span>
+      {% else %}
+      <a href="/">1</a>
+      {% endif %}
+
+    {% for count in (2..paginator.total_pages) %}
+      {% if count == paginator.page %}
+      <span class="current-page">{{count}}</span>
+      {% else %}
+      <a href="/page{{count}}">{{count}}</a>
+      {% endif %}
+    {% endfor %}
 
   {% if paginator.next_page %}
-  <li class="next">
-    <a href="{{ site.BASE_PATH }}/{{ site.paginate_path | replace: ':num', paginator.next_page }}">Older &rarr;</a>
-  </li>
+    <a class="next" href="/page{{paginator.next_page}}">后页></a>
   {% else %}
-  <li class="next disabled">
-    <a>Older &rarr;</a>
-  </li>
+    <span class="next disabled" >后页></span>
   {% endif %}
+  (共{{ paginator.total_posts }}篇)
+</div>
 
-</ul>

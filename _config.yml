@@ -1,24 +1,10 @@
-# Site settings
-title: Pinder's Page
-name: Pinder's Page
-description: 'Pinder&#039;s Page'
-keywords: 'Pinder,pinder,blog,互联网,IT,游戏'
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://pinderpeng.org" # the base hostname & protocol for your site
-github: pinderpeng
-
-author:
-  name: Pinder
-  github: pinderpeng
-  weibo: pinderpeng
-  bio: 'Pinder&#039;s Page'
-
-
-# Build settings
-paginate: 10
-paginate_path: "page/:num/"
-highlighter: pygments
-markdown: kramdown
-rss_path: feed
-categories_path: categories.html
-tags_path: tags.html
+markdown: rdiscount
+permalink: /:year/:month/:day/:title/
+url: http://pinderpeng.org
+author: Pinder
+pygments: true
+safe: true
+paginate: 16
+auto: true
+duoshuo: pinder
+email: pinderpeng at gmail dot com
